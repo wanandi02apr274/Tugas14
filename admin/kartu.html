@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel kartu</title>
+</head>
+<body>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          label {
+            margin-bottom: 10px;
+          }
+          
+          input, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+          
+          input[type="date"] {
+            width: 100%;
+          }
+          
+          .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+          }
+          
+          button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #3e8e41;
+          }
+    </style>
+    <form>
+        <div>
+          <label for="id_pelanggan">ID Pelanggan:</label>
+          <input type="text" id="id_pelanggan" name="id_pelanggan">
+        </div>
+        <div>
+          <label for="jenis_kartu">Jenis Kartu:</label>
+          <select id="jenis_kartu" name="jenis_kartu">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="americanexpress">American Express</option>
+          </select>
+        </div>
+        <div>
+          <label for="nomor_kartu">Nomor Kartu:</label>
+          <input type="text" id="nomor_kartu" name="nomor_kartu">
+        </div>
+        <div>
+          <label for="tanggal_kadaluarsa">Tanggal Kadaluarsa:</label>
+          <input type="date" id="tanggal_kadaluarsa" name="tanggal_kadaluarsa">
+        </div>
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+</body>
+</html>

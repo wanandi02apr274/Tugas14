@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 11</title>
+</head>
+<style>.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }</style>
+<body>
+    <form action="proses_pendaftaran.php" method="POST">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="alamat">Alamat</label>
+          <textarea id="alamat" name="alamat" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="no_telepon">Nomor Telepon</label>
+          <input type="tel" id="no_telepon" name="no_telepon" pattern="[0-9]{10,12}" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="tanggal_daftar">Tanggal Daftar</label>
+          <input type="date" id="tanggal_daftar" name="tanggal_daftar" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="submit" value="Daftar">
+        </div>
+      </form>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .form-group {
+            margin-bottom: 1rem;
+          }
+          
+          label {
+            display: block;
+            font-weight: bold;
+          }
+          
+          input[type="text"],
+          input[type="number"],
+          input[type="date"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+          }
+          
+          input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease-in-out;
+          }
+          
+          input[type="submit"]:hover {
+            background-color: #0069d9;
+          }
+    </style>
+    <form action="proses_pesanan.php" method="POST">
+        <div class="form-group">
+          <label for="nama_produk">Nama Produk</label>
+          <input type="text" id="nama_produk" name="nama_produk" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="jumlah">Jumlah</label>
+          <input type="number" id="jumlah" name="jumlah" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="harga">Harga</label>
+          <input type="text" id="harga" name="harga" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="tanggal_pemesanan">Tanggal Pemesanan</label>
+          <input type="date" id="tanggal_pemesanan" name="tanggal_pemesanan" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="submit" value="Pesan">
+        </div>
+      </form>
+</body>
+</html>
